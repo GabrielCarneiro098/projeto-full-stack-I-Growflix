@@ -21,26 +21,28 @@ button .collapsed::after {
   align-items: flex-end;
 }
 
-.card img {
-  transition: 0.2s ease;
-}
-
-.card button {
-  opacity: 0;
-  transition: 0.5s ease;
-  transform: scale(0.9);
-}
-
-.card:hover img {
-  transform: scale(0.9);
-}
-
-.card:hover p {
-  transform: scale(0.9);
-  opacity: 1;
-}
-
-.card:hover button {
-  transform: scale(1);
-  opacity: 1;
+@media screen and (min-width: 992px) {
+  .card img {
+    transition: 0.2s ease;
+  }
+  
+  .card button {
+    opacity: 0;
+    transition: 0.5s ease;
+    transform: scale(0.9);
+  }
+  
+  .card:hover img {
+    transform: scale(0.9);
+  }
+  
+  .card:hover p {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  
+  .card:hover button {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

@@ -33,11 +33,11 @@ function renderVideos(category, element) {
 
   videosInThisCategory.forEach((video) => {
     html += `
-      <div class="col-12 col-sm-3 my-3">
+      <div class="col-12 col-sm-6 col-lg-3 my-3">
         <div class="card bg-transparent text-light">
         <img src="${video.img}" alt="${video.title}" onclick="openModal('${video.url}') class="card-img-top" />
           <div class="card-body">
-            <button class="btn btn-danger bg-transparent border-0 d-flex flex-row align-items-center gap-3 text-start" onclick="openModal('${video.url}', '${video.title}')"><i class="bi bi-play-circle fs-1"></i>${video.title}</button>  
+            <button class="btn p-0 btn-danger bg-transparent border-0 d-flex flex-row align-items-center gap-3 text-start text-wrap" onclick="openModal('${video.url}', '${video.title}')"><i class="bi bi-play-circle fs-1"></i>${video.title}</button>  
           </div>
         </div>
       </div>
